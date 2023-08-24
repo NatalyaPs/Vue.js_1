@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <style>
+        .img {
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Задание 1</h2>
+    <div id="product">
+        <img :src="product.url" :alt="product.name" class="img">
+        <h1>Название продукта: {{ product.name }}</h1>
+        <p>Цена: {{ product.price }}</p>
+        <p>
+            <button type="button" :disabled="product.hasDiscount" @click="makeDiscount">Получить скидку</button>
+        </p>
+        <!-- disabled кнопка отключается осле нажатия и второй раз пересчитать скидку не получится -->
+    </div>
+
+    <h2>Задание 2</h2>
+    <div id="users">
+        <ul>
+            <li v-for="user in users" :key="user.id">
+                Имя: {{ user.nameUser }} возраст: {{ user.age }}
+            </li>
+        </ul>
+    </div>
+
+    <h2>Задание 3</h2>
+    <div id="listOfProducts">
+        <ul>
+            <!-- <li v-for="(item, index) in items" :key="index">
+                <p>
+                    <input type="number" v-model="item.quantity" placeholder="Количество" />
+                    <input type="checkbox" v-model="item.isBought">
+                    <span>{{ item.nameItem }}</span>
+                </p>
+            </li> -->
+        </ul>
+    </div>
+
+    <h2>Задание 4</h2>
+    <div id="listOfContacts">
+        <p>Имя</p>
+        <input type="text" v-model="nameContact"/>
+        <p>Фамилия</p>
+        <input type="text" v-model="lactNameContact"/>
+        <p>Email:</p>
+        <input type="email" v-model="emailContact"/><br><br>
+        <button @click="addContact">Добавить контакт</button>
+        <ul>
+            <li v-for="({nameContact, lactNameContact, emailContact}, index) in contacts" :key="index">
+                {{nameContact }} {{ lactNameContact }} - {{ emailContact }}
+            </li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
