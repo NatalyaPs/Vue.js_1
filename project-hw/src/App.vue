@@ -6,6 +6,7 @@
     <BannerComp/>
     <ProjectList/>
     <CounterComp/>
+    <FooterComp/>
   </div>
 </template>
 
@@ -15,6 +16,7 @@ import BannerComp from './components/BannerComp.vue';
 import HeaderComp from './components/HeaderComp.vue'
 import ProjectList from './components/ProjectList.vue';
 import CounterComp from './components/CounterComp.vue';
+import FooterComp from './components/FooterComp.vue';
 
 export default {
   name: 'App',
@@ -24,6 +26,7 @@ export default {
     BannerComp,
     ProjectList,
     CounterComp,
+    FooterComp
 }
 }
 </script>
