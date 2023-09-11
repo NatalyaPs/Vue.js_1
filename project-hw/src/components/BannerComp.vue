@@ -1,20 +1,23 @@
 <template>
-    <div class="banner-background center">
-        <section class="banner center">
-            <div class="banner__info">
-                <h1 class="banner__info_title">Let Your Home 
-                    Be Unique</h1>
-                <p class="banner__info_text">There are many variations of the passages of
-                    lorem Ipsum fromavailable, majority.</p>
-                <button class="button">
-                    Get Started
-                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17" fill="none">
-                        <path d="M2 8.43542L15.7232 8.29857M10.6182 1.91138L17.1412 8.43436L10.4868 15.0887" stroke="#CDA274" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
-                        </svg>
-                </button>
-            </div>
-    </section>
+    <div class="banner-contain center">
+        <div class="banner-background center">
+            <section class="banner">
+                <div class="banner__info">
+                    <h1 class="banner__info_title">Let Your Home 
+                        Be Unique</h1>
+                    <p class="banner__info_text">There are many variations of the passages of
+                        lorem Ipsum fromavailable, majority.</p>
+                    <button class="button">
+                        Get Started
+                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17" fill="none">
+                            <path d="M2 8.43542L15.7232 8.29857M10.6182 1.91138L17.1412 8.43436L10.4868 15.0887" stroke="#CDA274" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                            </svg>
+                    </button>
+                </div>
+            </section>
+        </div>
     </div>
+    
     
 </template>
 
@@ -39,17 +42,21 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    // .banner-contain {
+    //     max-width: 1200px;
+    //     height: 758px;
+    // }
+
     .banner-background {
-        background-image: url('../assets/banner.png');
-        // background-image: './img/banner.png';
+        background-image: url('../assets/banner.png') ;
         background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
+        background-position: top center;
+        // background-size: cover;
+        background-size: contain;
         max-width: 1200px;
         height: 758px;
         border-radius: 30px;
-        // position: relative;
-        // margin: auto;
+
     }
     .banner {
         &__info {

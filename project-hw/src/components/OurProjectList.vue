@@ -5,11 +5,11 @@
             <p class="project__heading_text">It is a long established fact that a reader will be distracted by the of readable content of page  lookings at its layouts  points.</p>
         </div>
         <div class="projects">
-            <ProjectItem 
-            v-for="projectItem in listProjectItem"
-            :key="projectItem.id"
-            :projectItem="projectItem"
-        />
+            <OurProjectItem 
+                v-for="projectItem in listProjectItem"
+                :key="projectItem.id"
+                :projectItem="projectItem"
+            />
         </div>
         
         <!-- <div
@@ -72,12 +72,12 @@
 </template>
 
 <script>
-import ProjectItem from '@/components/ProjectItem.vue';
+import OurProjectItem from '@/components/OurProjectItem.vue';
 
 export default {
-    name: 'ProjectList',
+    name: 'OurProjectList',
     components: {
-        ProjectItem,
+        OurProjectItem,
     },
 
     data() {
@@ -115,13 +115,9 @@ export default {
         };
     },
 
-    mounted() {
-        
-    },
+    mounted() {},
 
-    methods: {
-        
-    },
+    methods: {},
 };
 </script>
 

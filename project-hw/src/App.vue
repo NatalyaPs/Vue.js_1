@@ -1,40 +1,49 @@
 <template>
   <div id="app">
-    <!-- <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+    
     <HeaderComp/>
     <BannerComp/>
-    <ProjectList/>
+    <OurProjectList/>
     <CounterComp/>
+    <!-- <ArticleNewsList/> -->
+    <ArticlesNewsMainPage/>
     <FooterComp/>
+
+    <BlogBanner/>
+    
+
   </div>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
+
+
 import BannerComp from './components/BannerComp.vue';
 import HeaderComp from './components/HeaderComp.vue'
-import ProjectList from './components/ProjectList.vue';
+import OurProjectList from './components/OurProjectList.vue';
 import CounterComp from './components/CounterComp.vue';
 import FooterComp from './components/FooterComp.vue';
+// import ArticleNewsList from './components/ArticleNewsList.vue';
+import ArticlesNewsMainPage from './components/ArticlesNewsMainPage.vue';
+import BlogBanner from './components/BlogBanner.vue';
 
 export default {
-  name: 'App',
-  components: {
-    // HelloWorld
+    name: 'App',
+    components: {
     HeaderComp,
     BannerComp,
-    ProjectList,
+    OurProjectList,
     CounterComp,
-    FooterComp
-}
+    FooterComp,
+    // ArticleNewsList,
+    ArticlesNewsMainPage,
+    BlogBanner
+  },
 }
 </script>
 <!-- @import './assets/styles/_vars.scss'; -->
 <style lang="scss">
 #app {
-
-
   // * {
   //     padding: 0;
   //     margin: 0;
@@ -54,11 +63,5 @@ export default {
   //     padding-left: calc(50% - 600px);
   //     padding-right: calc(50% - 600px);
   // }
-    // font-family: Avenir, Helvetica, Arial, sans-serif;
-    // -webkit-font-smoothing: antialiased;
-    // -moz-osx-font-smoothing: grayscale;
-    // text-align: center;
-    // color: #2c3e50;
-    // margin-top: 60px;
 }
 </style>

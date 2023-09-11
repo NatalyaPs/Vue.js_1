@@ -18,7 +18,7 @@
 
 <script>
 export default {
-    name: 'ProjectItem',
+    name: 'OurProjectItem',
     props: ['projectItem'],
 
     data() {
